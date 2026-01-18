@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 200px;
+  height: auto;
+}
+
+.grid-item img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
