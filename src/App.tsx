@@ -1,13 +1,13 @@
-import cards from './assets/beyond_cards.json';
+// import cards from './assets/beyond_cards.json';
 import './App.css'
 
-interface Card {
-  card_id: number,
-  image: string,
-  full_image: string
-}
+// interface Card {
+//   card_id: number,
+//   image: string,
+//   full_image: string
+// }
 function App() {
-  const artists = cards as Card[];
+  // const artists = cards as Card[];
   const modules = import.meta.glob<Record<string, any>>('./assets/artist_cards/*.{jpg,jpeg,png,webp}', { eager: true });
 
   const images = Object.keys(modules).map((imagePath) =>{
